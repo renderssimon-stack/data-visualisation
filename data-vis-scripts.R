@@ -32,6 +32,7 @@ bodymassplot <- penguins %>%
               ggplot(aes(x = species, y = body_mass_g)) +
               geom_violin() +
               geom_jitter(width = 0.2, alpha = 0.5)
+bodymassplot
 
 ggsave('body_mass_plot.png', bodymassplot, width = 8, height = 8, units = "cm")
 
